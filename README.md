@@ -1,7 +1,22 @@
 # YIP validator
 [![Gem](https://img.shields.io/gem/v/yip_validator.svg?style=flat)](http://rubygems.org/gems/yip_validator "View this project in Rubygems")
+[![Build Status](https://travis-ci.com/sambacha/yip_validator.svg?branch=master)](https://travis-ci.com/sambacha/yip_validator)
 
-
+## Overview 
+- [YIP validator](#yip-validator)
+  * [Validation rules](#validation-rules)
+    + [Mandatory fields](#mandatory-fields)
+    + [Optional fields](#optional-fields)
+    + [Mandatory values](#mandatory-values)
+  * [Prerequisite](#prerequisite)
+  * [Setup](#setup)
+  * [Usage (command line)](#usage--command-line-)
+  * [Usage (as a lib)](#usage--as-a-lib-)
+    + [Example](#example)
+  * [Running tests](#running-tests)
+  * [Releasing new gem](#releasing-new-gem)
+  * [License](#license)
+ 
 ## Validation rules
 
 ### Mandatory fields
@@ -25,19 +40,19 @@
 
 ### Mandatory values
 
-- `status` must be:
+- `status` must be 
 	* 'WIP'
 	* 'Proposed'
 	* 'Approved'
 	* 'Implemented'
 	* 'Withdrawn'
-	* 'Deferred'
+	* 'Deferred' 
 	* 'Rejected'
 	* 'Moribund'
 
 ## Prerequisite
 
-- ruby
+- Ruby 2.3.3+
 
 ## Setup
 
@@ -81,3 +96,6 @@ bundle exec rspec
 gem bump --version patch|minor|major
 bundle exec rake release
 ```
+
+## License 
+SPDX-License-Identifier: MIT
